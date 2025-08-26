@@ -1,0 +1,181 @@
+.login-form, .weather-form {
+  width: 320px;
+  margin: 40px auto 0 auto;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: #fff;
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input, .weather-form input {
+  width: 90%;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.login-form button, .weather-form button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  color: #185a9d;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.login-form button:hover, .weather-form button:hover {
+  background: #185a9d;
+  color: #fff;
+}
+
+.App button {
+  margin-top: 16px;
+}
+.weather-card {
+  width: 320px;
+  margin: 40px auto 0 auto;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: #fff;
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.weather-card .search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.weather-card .search-bar input {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.weather-card .search-bar button {
+  background: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #185a9d;
+}
+
+.weather-card .weather-icon {
+  font-size: 48px;
+  margin: 16px 0 8px 0;
+}
+
+.weather-card .temp {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.weather-card .city {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.weather-card .details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.weather-card .details .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.weather-card .details .detail:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.weather-card .detail-label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.weather-card .detail-value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
